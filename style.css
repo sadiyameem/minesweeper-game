@@ -226,3 +226,92 @@ p {
     background-color: white;
 }
 
+#grid .cell.revealed {
+    border: 1px solid lightgray;
+}
+
+#grid .cell.revealed::before {
+    display: none;
+}
+
+#grid .cell.revealed .flag {
+    display: none;
+}
+
+#grid .cell.mine {
+    background-color: white;
+}
+
+#grid .cell.mine::after {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+}
+
+#grid .cell.incorrect .flag::before, #grid .cell.incorrect .flag::after {
+    top: 50%;
+    z-index: 1;
+    left: -13px;
+    height: 2px;
+    width: 16px;
+    content: "";
+    position: absolute;
+    background-color: black;
+}
+
+#grid .cell.incorrect .flag::before {
+    transform: rotate(-45deg);
+}
+
+#grid .cell.incorrect .flag::after {
+    transform: rotate(45deg);
+}
+
+#grid .cell.mousedown {
+    border: none;
+}
+
+#leaderboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#leaderboard h4 {
+    margin: 0 0 10px;
+}
+
+#leaderboard ul {
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    background-color: gray;
+}
+
+#leaderboard ul li {
+    padding: 2px;
+    list-style: none;
+}
+
+#leaderboard ul li span {
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+#leaderboard ul li.highlight {
+    background-color: yellow;
+}
+
+#leaderboard button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    text-decoration: underline;
+}
+
