@@ -315,3 +315,83 @@ p {
     text-decoration: underline;
 }
 
+.cell.white {
+    color: white;
+}
+
+.cell.gray-light {
+    color: lightgray;
+}
+
+.cell.gray.mid {
+    color: gainsboro;
+}
+
+.cell.gray {
+    color: gray;
+}
+
+.cell.gray-dark {
+    color: darkgray;
+}
+
+.cell.black {
+    color: black;
+}
+
+.cell.red {
+    color: red;
+}
+
+.cell.maroon {
+    color: maroon;
+}
+
+.cell.purple {
+    color: purple;
+}
+
+.cell.yellow {
+    color: yellow;
+}
+
+.cell.yellow-light {
+    color: lightyellow;
+}
+
+.cell.blue {
+    color: blue;
+}
+
+.cell.blue-dark {
+    color: darkblue;
+}
+
+.cell.green {
+    color: green;
+}
+
+.cell.turquoise {
+    color: turquoise;
+}
+
+#devbox {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    text-align: left;
+    max-width: 300px;
+    color: white;
+    background-color: black;
+}
+
+#devbox p {
+    margin: 0;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+#devbox p + p {
+    padding-top: 5px;
+}
+
